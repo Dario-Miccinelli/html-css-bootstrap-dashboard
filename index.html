@@ -1,129 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layout Bootstrap Boolean</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <div id="container">
-      <!-- Header -->
-      <header class="bg-light">
-        <nav class="navbar navbar-expand-lg w-100">
-          <div class="container-fluid d-flex">
-            <a class="navbar-brand d-none d-lg-inline" href="#"
-              ><img src="./assets/img/logo.svg" alt="logo Boolean"
-            /></a>
-            <a class="navbar-brand d-inline d-lg-none" href="#"
-              ><img
-                class="jt-logo"
-                src="img/mobile-logo.png"
-                alt="logo Boolean"
-            /></a>
-            <form class="d-flex w-100" role="search">
-              <i
-                class="jt-search bg-secondary bg-opacity-25 m-0 fa-solid fa-magnifying-glass"
-              ></i>
 
-              <input
-                class="form-control jt-navsearch bg-secondary bg-opacity-25"
-                type="search"
-                placeholder="     Prova a cercare 'Quanti ragazzi stanno seguendo lezioni Boolean?' "
-                aria-label="Search"
-              />
-            </form>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    ><i class="fa-solid fa-list-ul"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><i class="fa-solid fa-circle-question"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <a class="nav-link px-2" href=""
-              ><i class="jt-bell fa-solid fa-bell"></i
-            ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout Bootstrap Boolean</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <div id="container-totale">
+
+    <!-- Header -->
+    <header class="bg-light">
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container-fluid d-flex">
+
+          <a class="navbar-brand d-none d-lg-inline" href="#"><img src="./assets/img/logo.svg" alt="logo Boolean" /></a>
+          <!-- da fixare -->
+          <a class="navbar-brand d-inline d-lg-none" href="#"><img class="jt-logo" src="./assets/img/mobile-logo.png"
+              alt="logo Boolean" /></a>
+          <!-- da fixare -->
+          <form class="d-flex w-100" role="search">
+            <i class="jt-search bg-secondary bg-opacity-25 m-0 fa-solid fa-magnifying-glass"></i>
+
+            <input class="form-control jt-navsearch bg-secondary bg-opacity-25" type="search"
+              placeholder="     Prova a cercare 'Quanti ragazzi stanno seguendo lezioni Boolean?' "
+              aria-label="Search" />
+          </form>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-      <!-- /Header -->
-
-      <!-- Container -->
-
-      <div class="container-fluid d-flex">
-        <div class="row text-white">
+          <a class="nav-link px-2" href=""><i class="jt-bell fa-solid fa-bell"></i></a>
+        </div>
+      </nav>
+    </header>
+    <!-- /Header -->
 
 
-          <!-- Aside -->
-          <aside class="col-1 d-flex flex-column justify-content-between p-0">
-            <nav
-              class="pt-3 nav flex-column list-unstyled text-center justify-content-center p-0"
-            >
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                ><i class="fa-solid fa-house fs-6"></i
-                ><span class="d-none d-lg-inline fs-6">Home</span></a
-              >
-              <a class="nav-link text-white" href="#"
-                ><i class="fa-solid fa-chart-simple fs-5"></i
-                ><span class="d-none d-lg-inline fs-6">Stats</span></a
-              >
-              <a class="nav-link text-white" href="#"
-                ><i class="fa-solid fa-signal fs-6"></i
-                ><span class="d-none d-lg-inline fs-6">Signals</span></a
-              >
-            </nav>
-            <div class="aside-bottom text-center p-0 my-4">
-              <a class="nav-link" href="#"
-                ><i class="bi bi-gear-fill fs-5  ps-4"></i
-                ><span class="d-none d-lg-inline fs-6 ms-2">Admin</span></a
-              >
+    <!-- main -->
+
+    <main>
+
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+
+          <!-- side -->
+          <div class="col-1 text-white d-flex flex-column justify-content-between p-0">
+            <div class="pt-3 nav flex-column list-unstyled text-center justify-content-center p-0">
+              <a class="nav-link active text-white" aria-current="page" href="#"><i
+                  class="fa-solid fa-house fs-6 px-2"></i><span class="d-none d-lg-inline fs-6">Home</span></a>
+              <a class="nav-link text-white" href="#"><i class="fa-solid fa-chart-simple px-2 fs-5"></i><span
+                  class="d-none d-lg-inline fs-6">Stats</span></a>
+              <a class="nav-link text-white" href="#"><i class="fa-solid fa-signal  px-2 fs-6"></i><span
+                  class="d-none d-lg-inline fs-6">Signals</span></a>
             </div>
-          </aside>
+            <div class="aside-bottom text-center p-0 my-4">
+              <a class="nav-link" href="#"><i class="bi bi-gear-fill fs-5  px-2   ps-4"></i><span
+                  class="d-none d-lg-inline fs-6 ms-2">Admin</span></a>
+            </div>
 
-          <!-- /Aside -->
+          </div>
+          <!-- side -->
 
           
+
+
+          <!-- parte main -->
+          <div class="col-11 d-flex mx-0 flex-wrap">
+            
+            <div class="container-fluid px-0">
+              <div class="row">
+                <div class="container-fluid bg-primary m-0 text-white">
+                  <div class="row boolean">
+                    <div class="col-lg-8 p-4">
+                      <div class="boolean-top">
+                        <h3 class="d-inline-block p-1">Boolean</h3>
+                        <span class="badge jt-badge rounded-pill text-bg-dark bg-opacity-25">Piano blaze</span>
+                      </div>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25">3 app>>>></span>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25 d-none d-lg-inline">Boolean mobile app</span>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25 d-none d-lg-inline">Boolean webapp</span>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25 d-none d-lg-inline">Boolean app</span>
+                      <span class="d-inline d-lg-none"><i class="fa-solid fa-angles-right"></i></span>
+                      <span class="badge jt-badge text-bg-dark bg-opacity-25 d-inline d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                      
+                    </div>
+                    <div class="col-lg-4 p-3">
+                      <p>Utenti collegati nelle ultime 24 ore</p>
+                      <h2>230</h2>
+                    </div>
+                  </div>
+                </div>
+                
+              
+              </div>
+              <div class="col-lg-9 p-1">
+                <!-- Prossime classi -->
+                <div class="row m-1">
+                  <div class="card p-0 mb-4">
+                    <div class="card-header d-flex justify-content-between bg-secondary bg-opacity-10">
+                      <h3 class="card-title">Prossime classi</h3>
+                      <div class="jt-plus h2 text-primary d-flex align-items-center">
+                        <i class="bi bi-plus-square "></i>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <table class="table">
+                        <thead>
+                          <tr class="table-columns-name">
+                            <th scope="col" class="name">Nome</th>
+                            <th scope="col" class="date d-none d-lg-table-cell text-center">Data inizio</th>
+                            <th  scope="col" class="roi d-none d-md-table-cell text-center">ROI</th>
+                            <th scope="col" class="state text-center">Stato</th>
+                            <th scope="col" class="actions text-center">Azioni</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                          <tr>
+                            <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                            <td class="d-none d-lg-table-cell text-center">01 Lug 2022</td>
+                            <td class="roi d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="d-flex text-secondary justify-content-between"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                          </tr>
+                          <tr>
+                            <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                            <td class="d-none d-lg-table-cell text-center">14 Lug 2022</td>
+                            <td class="roi d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="d-flex text-secondary justify-content-between"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                          </tr>
+                          <tr>
+                            <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                            <td class="d-none d-lg-table-cell text-center">30 Ago 2022</td>
+                            <td class="roi d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center"><span class="badge text-bg-warning text-light">Process</span></td>
+                            <td class="d-flex text-secondary justify-content-between"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                          </tr>
+                          <tr>
+                            <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                            <td class="d-none d-lg-table-cell text-center">06 Sep 2022</td>
+                            <td class="roi d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="d-flex text-secondary justify-content-between"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                          </tr>
+                          <tr>
+                            <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                            <td class="d-none d-lg-table-cell text-center">13 Sep 2022</td>
+                            <td class="roi d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                            <td class="d-flex text-secondary justify-content-between"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                          </tr>
+                          <tr>
+                            <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                            <td class="d-none d-lg-table-cell text-center">20 Sep 2022</td>
+                            <td class="roi d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="d-flex text-secondary justify-content-between"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                          </tr>
+                          <tr>
+                            <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                            <td class="d-none d-lg-table-cell text-center">27 Sep 2022</td>
+                            <td class="roi d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                            <td class="d-flex text-secondary justify-content-between"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                          </tr>
+                          <tr>
+                            <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                            <td class="d-none d-lg-table-cell text-center">04 Ott 2022</td>
+                            <td class="roi d-none d-md-table-cell text-center">20%</td>
+                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="d-flex text-secondary justify-content-between"><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Prossime classi -->
+  
+                <!-- FAQ -->
+                <div class="row m-1">
+                  <div class="card p-0 mb-4">
+                    <div class="card-header d-flex justify-content-between bg-secondary bg-opacity-10">
+                      <h3 class="card-title">F.A.Q</h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Come si sviluppa una dashboard?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">E io che ne so mi scusi?</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Funziona questa dashboard?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Non penso proprio.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Perchè il menù laterale non rimane al posto suo?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Stai sbagliando qualcosa come sempre</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /FAQ -->
+              </div>
+
+            </div>
+          </div>
+
+          
+
+
         </div>
       </div>
-    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
