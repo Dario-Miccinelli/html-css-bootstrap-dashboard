@@ -52,6 +52,10 @@ height: 100%;
 #container-totale > header > nav > div > a.navbar-brand.d-inline.d-lg-none > img {
     width: 30px;
 }
+#container-totale > main > div > div > div a:hover {
+    transform:scale(1.1)
+}
+
 
 @media only screen and  (max-width: 990px) {
 	#container-totale > header > nav > div {
@@ -59,4 +63,5 @@ height: 100%;
 
     }
 }
+
 
